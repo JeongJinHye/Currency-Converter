@@ -3,8 +3,8 @@ import CurrencySelect from "./CurrencySelect";
 
 const ConverterForm = () => {
   const [amount, setAmount] = useState(100);
-  const [fromCurrency, setFromCurrency] = useState("USD");
-  const [toCurrency, setToCurrency] = useState("INR");
+  const [fromCurrency, setFromCurrency] = useState("KRW");
+  const [toCurrency, setToCurrency] = useState("JPY");
   const [result, setResult] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
