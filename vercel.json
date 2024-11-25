@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/rates",
+      "destination": "https://v6.exchangerate-api.com/v6/0b8bb65c5388b566ed002665/pair/KRW/JPY"
+    }
+  ]
+}
