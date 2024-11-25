@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
 import CurrencySelect from "./CurrencySelect";
 
+fetch("/api/rates")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log("Exchange Rate:", data);
+  })
+  .catch((error) => {
+    console.error("Error fetching exchange rate:", error);
+  });
+
 const ConverterForm = () => {
   const [amount, setAmount] = useState(100);
   const [fromCurrency, setFromCurrency] = useState("KRW");
